@@ -106,17 +106,13 @@
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="team.html" class="nav-link ">
-                                            Malaysia
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="team.html" class="nav-link ">
-                                            Thailand
-                                        </a>
-                                    </li>
+                                    @foreach ($countries as $country)
+                                        <li class="nav-item">
+                                            <a href="{{ route('job.show', $country->id) }}">
+                                                {{ $country->country ?? '' }}
+                                            </a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </li>
 

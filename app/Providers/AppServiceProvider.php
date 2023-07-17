@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Category;
+use App\Models\Country;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,5 +27,9 @@ class AppServiceProvider extends ServiceProvider
     {
         $categories = Category::all();
         view()->share('categories', $categories);
+
+
+        $countries = Country::all();
+        view()->share('countries', $countries);
     }
 }
