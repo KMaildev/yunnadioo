@@ -92,10 +92,21 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="service.html" class="nav-link ">Service Page</a>
+                                        <a href="{{ route('about.index') }}" class="nav-link ">
+                                            Our Company
+                                        </a>
                                     </li>
+
                                     <li class="nav-item">
-                                        <a href="service-details.html" class="nav-link ">Service Details</a>
+                                        <a href="{{ route('ceo_message') }}" class="nav-link ">
+                                            President's Message
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="{{ route('team') }}" class="nav-link ">
+                                            Professional Team
+                                        </a>
                                     </li>
                                 </ul>
                             </li>
@@ -129,6 +140,25 @@
                                             </a>
                                         </li>
                                     @endforeach
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Application Form
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="{{ route('cv.index') }}" class="nav-link">
+                                            Submit CV
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('employer.index') }}" class="nav-link">
+                                            Employer Form
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 

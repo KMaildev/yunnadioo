@@ -31,16 +31,19 @@
         </div>
     </div>
 
-
-
-
-    <section class="blog-sec px-120">
+    <section class="blog-sec">
+        <br>
         <div class="container">
             <div class="row g-0">
                 <div class="col-12">
                     <div class="sec-title text-center">
-                        <h3><img src="img/icons/title-icon-infinity.svg" alt="">Our Blog</h3>
-                        <h2 class="tag1">Latest Blogs & Articles</h2>
+                        <h3>
+                            <img src="{{ asset('assets/img/icons/title-icon-infinity.svg') }}" alt="">
+                            Jobs Available In
+                        </h3>
+                        <h2 class="tag1">
+                            {{ $country->country ?? '' }}
+                        </h2>
                     </div>
                 </div>
                 <div class="col-12 mt-50">
@@ -58,7 +61,7 @@
                                         </span>
                                     </div>
                                     <div class="conts">
-                                        <a href="#">
+                                        <a href="{{ route('cv.index') }}" style="font-size: 20px;">
                                             {{ $job->title ?? '' }}
                                         </a>
                                     </div>

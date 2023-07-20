@@ -1,5 +1,28 @@
 @extends('layouts.main')
 @section('content')
+    <div class="page-banner-brd" style="background-image: url({{ asset('data/about_bg.png') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner-brd-text text-center">
+                        <h1>
+                            <br>
+                        </h1>
+                        <br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="banner-frame-one"></span>
+        <span class="banner-frame-two"></span>
+        <span class="banner-frame-three"></span>
+        <span class="banner-frame-four"></span>
+        <div class="shape-top-left" data-aos="fade-right" data-aos-delay="500"></div>
+        <div class="shape-bottom-right" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-delay="1500">
+        </div>
+    </div>
+
     <!--about ortency start-->
     <section class="about-ortency-v1 px-120">
         <div class="container">
@@ -176,7 +199,8 @@
                 <div class="col-md-6">
                     <div class="left-images-rsn">
                         <img src="{{ asset('data/about1.jpg') }}" class="rsn1" alt="" style="width: 370px;">
-                        <img src="{{ asset('data/about_bg.png') }}" class="rsn2" alt="" style="width: 370px;">
+                        <img src="{{ asset('data/about_bg.png') }}" class="rsn2" alt=""
+                            style="width: 370px;">
                         <img src="{{ asset('data/mmmap.png') }}" class="rsn3" alt="" style="width: 300px;">
                     </div>
                 </div>
@@ -371,96 +395,4 @@
         <!--/.container-->
     </div>
     <!--fun fact end-->
-
-
-
-
-
-
-
-
-
-    <section class="portfolio-sec-pg py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-
-                    <center>
-                        <div class="sec-title">
-                            <h3>
-                                <img src="{{ asset('assets/img/icons/title-icon-infinity.svg') }}" alt="">
-                                Activities & Gallery
-                            </h3>
-                            <h2 class="tag1">
-                                Our Activities
-                            </h2>
-                        </div>
-                    </center>
-
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/aIQvj-l5W2s"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/lebIk_gYHHc"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-
-                        <div class="col-md-4">
-                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/EVG-IH8cMYs"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="row g-4">
-                        @foreach ($activities as $activity)
-                            <div class="col-md-12">
-                                <h5>
-                                    {{ $activity->title ?? '' }}
-                                </h5>
-                                <p>
-                                    {{ $activity->description ?? '' }}
-                                </p>
-                            </div>
-                            @php
-                                $images = explode(',', $activity->images);
-                            @endphp
-                            @foreach ($images as $image)
-                                <div class="col-md-3 col-lg-3">
-                                    <div class="portfolio-inner-sl">
-                                        <div class="imgs">
-                                            <img data-enlargeable="" src="{{ $image }}" alt="">
-                                        </div>
-                                        <div class="hidden-cont">
-                                            <div class="d-flex justify-content-between">
-                                                <div class="name">
-                                                    <h3>
-                                                        {{ $activity->title ?? '' }}
-                                                    </h3>
-                                                    <p>
-                                                        ”Yun Nadi Oo Co.,Ltd”
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                            <hr style="border-top: 1px dashed #d6a40f;">
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection
