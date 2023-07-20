@@ -21,87 +21,102 @@
                 </div>
                 <!--/.newsletter-form-->
             </div>
+
+
             <div class="col-12">
                 <div class="footer-widgets-wrap">
                     <div class="row g-4 gy-5">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="ftr-widget about">
-                                <h2>About Company</h2>
-                                <p>There are many variations of passages of Lore Ipsum availab but the majority have
-                                    suffereds alteration in some form, by injected humour a randomised words which
-                                </p>
-                                <ul class="socials">
-                                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                            <!--/.ftr-widget-->
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="ftr-widget">
-                                <h2>Featured Services </h2>
-                                <ul class="navs">
-                                    <li><a href="#">Social Media Marketing</a></li>
-                                    <li><a href="#">Pay Per Click Management</a></li>
-                                    <li><a href="#">Search Engine Optimization</a></li>
-                                    <li><a href="#">Free SEO Analysis</a></li>
-                                    <li><a href="#">Case Studies</a></li>
-                                </ul>
-                            </div>
-                            <!--/.ftr-widget-->
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="ftr-widget">
-                                <h2>Recent Post </h2>
-                                <ul class="recent-posts">
-                                    <li class="d-flex align-items-center">
-                                        <div class="flex-grow-0">
-                                            <img src="{{ asset('assets/img/blog1.jpg') }}" alt="">
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <a href="blog-details.html">Thoughtful man using laptop pondering </a>
-                                            <p><i class='bx bx-calendar'></i> 09 Dec 2022</p>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="flex-grow-0">
-                                            <img src="{{ asset('assets/img/blog2.jpg') }}" alt="">
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <a href="blog-details.html">Thoughtful man using laptop pondering </a>
-                                            <p><i class='bx bx-calendar'></i> 09 Dec 2022</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--/.ftr-widget-->
-                        </div>
+
                         <div class="col-sm-6 col-lg-3">
                             <div class="ftr-widget">
                                 <h2>Contact Us</h2>
                                 <ul class="contacts">
                                     <li>
                                         <i class='bx bxs-phone'></i>
-                                        <a href="tel:7501234">+(323) 750-1234</a>
+                                        <a href="tel:+(323) 9847 3847 383">
+                                            +(323) 9847 3847 383
+                                        </a>
                                     </li>
                                     <li>
                                         <i class='bx bxs-envelope'></i>
-                                        <a href="mailto:infoyourortencey@email.com">infoyourortencey@email.com</a>
+                                        <a href="mailto:info@yunnadioocompany.com">info@yunnadioocompany.com</a>
                                     </li>
                                     <li>
                                         <i class='bx bxs-map'></i>
-                                        <address>374 FA Tower, William S Blvd, Melbourne
-                                            2721, IL, USA</address>
+                                        <address>
+                                            No. 1543, Pyi Htaung Su Main Road, 46 Quarter, North Dagon, Yangon
+                                        </address>
+                                    </li>
+
+                                    <li>
+                                        <i class='bx bxs-map'></i>
+                                        <address>
+                                            Kyauk Lone Gyi Phayar Road, No. (4) Quarter, Myawaddy, Myanmar
+                                        </address>
                                     </li>
                                 </ul>
                             </div>
-                            <!--/.ftr-widget-->
                         </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="ftr-widget">
+                                <h2>
+                                    Quick Links
+                                </h2>
+                                <ul class="navs">
+                                    <li class="nav-item">
+                                        <a href="{{ route('home') }}" class="nav-link">
+                                            Home
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="{{ route('about.index') }}" class="nav-link ">
+                                            Our Company
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="{{ route('ceo_message') }}" class="nav-link ">
+                                            President's Message
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="{{ route('team') }}" class="nav-link ">
+                                            Professional Team
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('cv.index') }}" class="nav-link">
+                                            Submit CV
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('employer.index') }}" class="nav-link">
+                                            Employer Form
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15269.436451462236!2d96.187575!3d16.907569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c193d6d372453f%3A0xb753e126cf666974!2sYun%20Nadi%20Oo!5e0!3m2!1sen!2smm!4v1688485222344!5m2!1sen!2smm"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15288.179156499937!2d98.503814!3d16.674642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dd9ff271d538d5%3A0x27edb5fbb384fe05!2sYun%20Nadi%20Oo%20Co.%2CLtd.!5e0!3m2!1sen!2smm!4v1688485264546!5m2!1sen!2smm"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
                     </div>
                 </div>
-                <!--/.footer-widgets-wrap-->
             </div>
         </div>
     </div>
@@ -111,12 +126,14 @@
     <div class="container">
         <div class="row gy-3">
             <div class="col-md-6">
-                <p>2022 © All rights reserved by devsnest-llc</p>
+                <p>
+                    Copyright © 2023 Yun Nadi Oo - Overseas Employment Agency. All Rights Reserved
+                </p>
             </div>
             <div class="col-md-6">
                 <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="{{ route('cv.index') }}">Submit CV</a></li>
+                    <li><a href="{{ route('contact.index') }}">Contact Us</a></li>
                 </ul>
             </div>
         </div>
