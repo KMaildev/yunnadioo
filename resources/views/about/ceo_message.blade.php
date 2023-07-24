@@ -114,8 +114,6 @@
             alt="">
     </section>
 
-
-
     <section class="blog-sec">
         <div class="container">
             <div class="row g-0">

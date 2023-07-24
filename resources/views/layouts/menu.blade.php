@@ -6,7 +6,7 @@
                 <div class="col-md-8 col-xl-8">
                     <div class="left-content-top">
                         <ul>
-                            <li class="d-none d-xl-inline-block">
+                            <li class="d-none d-xl-inline-block" style="color: white;">
                                 Welcome to Yun Nadi Oo Co.,Ltd
                             </li>
 
@@ -31,7 +31,50 @@
                     <div class="right-content-top">
                         <ul>
                             <li>
-                                <div id="options" data-input-name="country2" data-selected-country="US">
+                                {{-- <div id="options" data-input-name="country2" data-selected-country="US">
+                                </div> --}}
+                                <div data-input-name="country2" data-selected-country="US" class="flagstrap">
+                                    <button type="button" data-bs-toggle="dropdown" id="flagstrap-drop-down-1VWwkNeO"
+                                        class="btn2 btn-info btn-sm dropdown-toggle" aria-expanded="true"><span
+                                            class="flagstrap-selected-1VWwkNeO">
+                                            <i class="flagstrap-icon flagstrap-us" style="margin-right: 10px;"></i>
+                                            English
+                                        </span>
+                                        <span class="caret" style="margin-left: 10px;"></span>
+                                    </button>
+                                    <ul id="flagstrap-drop-down-1VWwkNeO-list"
+                                        aria-labelled-by="flagstrap-drop-down-1VWwkNeO" class="dropdown-menu"
+                                        style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 27px, 0px);"
+                                        data-popper-placement="bottom-start">
+                                        <li>
+                                            <a data-val="">
+                                                Please select country
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-val="US">
+                                                <i class="flagstrap-icon flagstrap-us" style="margin-right: 10px;">
+                                                </i>
+                                                English
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a data-val="JP">
+                                                <i class="flagstrap-icon flagstrap-jp" style="margin-right: 10px;">
+                                                </i>
+                                                Japan
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a data-val="Th">
+                                                <i class="flagstrap-icon flagstrap-th" style="margin-right: 10px;">
+                                                </i>
+                                                Thailand
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </li>
                             <li>
@@ -54,25 +97,49 @@
     </div>
 
     <div class="navbar-area">
+        <style>
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+            }
 
+            .img-logo {
+                max-width: 100%;
+                height: auto;
+                max-height: 80px !important;
+            }
+
+            .ml10 {
+                margin-left: 10px;
+            }
+        </style>
         <div class="main-responsive-nav">
             <div class="container">
-                <div class="main-responsive-menu">
+                <div class="main-responsive-menu mobile-menu">
                     <div class="logo">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('assets/img/logo.png') }}" alt="image">
+                            <img src="{{ asset('data/logo.jpg') }}" alt="image">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="main-navbar">
+        <div class="main-navbar" style="background-color: white;">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
 
                     <a class="navbar-brand" href="{{ route('home') }}">
-                        <img src="{{ asset('assets/img/logo.png') }}" alt="image">
+                        <img src="{{ asset('data/logo.jpg') }}" alt="image" class="img-logo">
+
+                        <div class="ml10">
+                            <h1 style="font-size: 27px;">
+                                Yun Nadi Oo Co.,Ltd
+                            </h1>
+                            <h6 style="font-size: 14px;">
+                                Overseas Employment Agency
+                            </h6>
+                        </div>
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -145,7 +212,7 @@
 
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    Application Form
+                                    Application
                                     <i class='bx bx-chevron-down'></i>
                                 </a>
                                 <ul class="dropdown-menu">

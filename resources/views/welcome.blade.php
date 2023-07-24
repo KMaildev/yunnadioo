@@ -1,17 +1,12 @@
 @extends('layouts.main')
 @section('content')
-    <!--about ortency start-->
-    <section class="about-ortency-v1 px-120">
+    <section class="about-ortency-v1">
         <div class="container">
             <div class="row gy-5 align-items-center">
                 <div class="col-md-6">
-                    <div class="left-images-about">
-                        <div class="inner">
-                            <img src="{{ asset('data/8.jpg') }}" data-aos="fade-down" class="img1" alt="">
-                            <img src="{{ asset('data/10.jpg') }}" class="img2" alt="">
-                            <img src="{{ asset('data/10.jpg') }}" data-aos="flip-left" data-aos-delay="800" class="img3"
-                                alt="">
-                        </div>
+                    <div class="inner">
+                        <img style="width: 100%;" src="{{ asset('data/about_1.png') }}" data-aos="fade-down" class="img1"
+                            alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -66,8 +61,6 @@
             </div>
         </div>
     </section>
-    <!--about ortency end-->
-
 
     <div class="how-work-v3 bg-image px-120">
         <div class="container">
@@ -169,7 +162,6 @@
         <!--/.container-->
     </div>
 
-    <!--reason to success start-->
     <div class="reason-to_success-sec px-120">
         <div class="container">
             <div class="row g-4">
@@ -293,7 +285,6 @@
         </div>
     </div>
 
-    <!--fun fact start-->
     <div class="fun-fact-sec px-120" hidden>
         <div class="container">
             <div class="row g-0">
@@ -370,15 +361,6 @@
         </div>
         <!--/.container-->
     </div>
-    <!--fun fact end-->
-
-
-
-
-
-
-
-
 
     <section class="portfolio-sec-pg py-5">
         <div class="container">

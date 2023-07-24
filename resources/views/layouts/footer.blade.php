@@ -6,20 +6,24 @@
                 <div class="newsletter-form">
                     <div class="d-md-flex align-items-center justify-content-between">
                         <div class="left-content">
-                            <p>For Digital Marketing Agency</p>
-                            <h2>Join Our Agency Community</h2>
+                            <h2>
+                                Keep in Touch
+                            </h2>
+                            <p>
+                                If you have any queries about recruitments, vacancies, or anything else, our team is
+                                ready to response all your queries.
+                            </p>
                         </div>
                         <div class="right-content">
                             <form>
                                 <div class="newslttr-grp">
-                                    <input type="email" placeholder="Enter your email address" class="form-control">
-                                    <button type="submit" class="btn">Subscribe Now</button>
+                                    <input type="hidden" placeholder="Enter your email address" class="form-control">
+                                    <a href="{{ route('contact.index') }}" class="btn">Contact Now</a>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <!--/.newsletter-form-->
             </div>
 
 

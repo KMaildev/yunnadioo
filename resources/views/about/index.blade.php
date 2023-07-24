@@ -28,13 +28,9 @@
         <div class="container">
             <div class="row gy-5 align-items-center">
                 <div class="col-md-6">
-                    <div class="left-images-about">
-                        <div class="inner">
-                            <img src="{{ asset('data/8.jpg') }}" data-aos="fade-down" class="img1" alt="">
-                            <img src="{{ asset('data/10.jpg') }}" class="img2" alt="">
-                            <img src="{{ asset('data/10.jpg') }}" data-aos="flip-left" data-aos-delay="800" class="img3"
-                                alt="">
-                        </div>
+                    <div class="inner">
+                        <img style="width: 100%;" src="{{ asset('data/about_1.png') }}" data-aos="fade-down" class="img1"
+                            alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -199,8 +195,7 @@
                 <div class="col-md-6">
                     <div class="left-images-rsn">
                         <img src="{{ asset('data/about1.jpg') }}" class="rsn1" alt="" style="width: 370px;">
-                        <img src="{{ asset('data/about_bg.png') }}" class="rsn2" alt=""
-                            style="width: 370px;">
+                        <img src="{{ asset('data/about_bg.png') }}" class="rsn2" alt="" style="width: 370px;">
                         <img src="{{ asset('data/mmmap.png') }}" class="rsn3" alt="" style="width: 300px;">
                     </div>
                 </div>

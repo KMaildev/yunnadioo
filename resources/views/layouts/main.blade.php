@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Yun Nadi Oo - Overseas Employment Agency (Myanmar) - @yield('title')</title>
+    <title>Yun Nadi Oo Co.,Ltd - Overseas Employment Agency (Myanmar) - @yield('title')</title>
     <!-- Standard Favicon -->
-    <link rel="icon" href="{{ asset('assets/img/fav/favicon-96x96.png') }}">
-    <!-- Touch Icons - iOS and Android 2.1+ -->
-    <link rel="apple-touch-icon" href="{{ asset('assets/img/fav/android-icon-48x48.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/img/fav/android-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/img/fav/apple-icon-114x114.png') }}">
+    <link rel="icon" href="{{ asset('data/logo.jpg') }}">
+
+    <meta name="description"
+        content="Yun Nadi Oo is the leading Manpower Recruiting Agency based in Myanmar, licensed and authorized by the Ministry of Labor, Employment and Social Security of Myanmar." />
+    <meta charset="utf-8">
+    <meta name="description"
+        content="A leading Manpower Recruiting Agency based in Myanmar, licensed and authorized by the Ministry of Labor, Employment and Social Security of Myanmar.">
+    <meta name="keywords"
+        content="Yun Nadi Oo Company,Yun Na Di Oo,Myanmar Agency,Myanmar Employment Agency,Myanmar Thai Agency,Job finding agency,Yun,Yoon Nadi Oo,Yoon Na Di Oo,ယွန်းနဒီဦး,ထိုင်းအေဂျင်စီ">
 
     <!--bootstrap v5.2.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
